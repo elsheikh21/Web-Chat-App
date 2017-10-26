@@ -1,0 +1,47 @@
+<!--
+ <input id="name" type="text" name="name" value="" onchange="changing()" placeholder="Enter your username!">
+  <button type="button" name="button" onclick="setUsername()">Let me chat!</button>
+       /*#message-container li:nth-child(odd) { background: #eee;  padding: 5%;}*/
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+      <link rel="stylesheet" type="text/css" href="D:/ChatApp/bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="D:/ChatApp/bootstrap/css/bootstrap-theme.min.css">
+      <script src="D:/ChatApp/bootstrap/js/bootstrap.js"></script>
+      <script>
+        var socket = io();
+        socket.on('connectToRoom',function(data){
+          document.body.innerHTML = '';
+          document.write(data);
+        });
+      </script>
+      <script>
+        $(function () {
+          var socket = io();
+          $('form').submit(function(){
+            socket.emit('chat message', $('#m').val());
+            $('#m').val('');
+            return false;
+          });
+          socket.on('chat message', function(msg){
+            $('#messages').append($('<li>').text(msg));
+          });
+        }); <input id = "uploadbtn" type="submit" value="Upload your image">
+
+      </script> -->
+<!--
+      // if (check2) {
+      //   alert("Username must not be empty, and only contain letters.");
+      // } else {
+      //   socket.emit('setUsername', document.getElementById('name').value);
+      // }
+ // today = today.toDateString();
+       // $('#message-container').append($('<li id="msg">').text(data.message));
+       // $('#message-container').append($('<li>').text(data.user + ": " + data.message + "\n" + d + "/" + m + "/" + y+ " " + h + ":" + mm));
+      // document.getElementById('message-container').innerHTML += '<div> <ul id="messages"> <li> <b>' + data.user + '</b>: ' + data.message + '</li> </ul> </div>'
+      // white-space: pre-line;        -00
+    -->
+<!-- <ul id="messages"></ul> -->
+<!-- <form action=""> -->
+<!-- onchange="changing()" on input-->
+<!-- <input id="m" autocomplete="off" /><button>Send</button> -->
+<!-- </form> -->
+<!-- action="/pictures/upload" method="POST" enctype="multipart/form-data" -->

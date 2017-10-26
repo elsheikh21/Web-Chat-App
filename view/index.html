@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Chat App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" type='text/css' href='../css/style.css'>
+</head>
+
+<body>
+<form>
+    <input id="name" name="name" value="" placeholder="Username please">
+    <button type="button" name="button" onclick="setUsername()">Chat!</button>
+    <div id="d">
+        <input type="file" name="image" id="image">
+    </div>
+</form>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<div id="error-container"></div>
+</body>
+</html>
+

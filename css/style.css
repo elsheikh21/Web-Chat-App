@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+    background: url('https://d26a57ydsghvgx.cloudfront.net/content/blog/live_chat.png') no-repeat;
+    background-size: cover;
+}
+
+form {
+    width: 30%;
+    padding: 5%;
+}
+
+form input {
+    border: 0;
+    padding: 5%;
+    margin-right: .5%;
+}
+
+form button {
+    background: rgb(130, 224, 255);
+    border: none;
+    padding: 5%;
+}
+
+#d {
+    border: none;
+    padding: 5%;
+    width: 60%
+}
+
+#message-container {
+    overflow: auto;
+    max-height: 40vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#message-container li {
+    background: #eee;
+    padding: 5%;
+}
+
+#message-container p {
+    font-family: serif;
+    font-size: 1.5vh;
+    text-align: right;
+    color: #fff;
+}
+
+/*#btn { background: rgb(130, 224, 255); border: none; padding: 5%; }*/
